@@ -6,9 +6,9 @@ metadata:
     run: front
 spec:
   ports:
-    - port: 3000
+    - port: 8000
       protocol: TCP
-      targetPort: 3000
+      targetPort: 8000
   selector:
       run: front
   type: LoadBalancer
@@ -30,7 +30,7 @@ spec:
       - name: front
         image: nizgh/oto-front:BUILD_NUMBER
         ports:
-        - containerPort: 3000
+        - containerPort: 8000
   strategy:
     type: RollingUpdate
     rollingUpdate:
