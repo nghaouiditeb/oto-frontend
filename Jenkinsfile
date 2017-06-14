@@ -32,9 +32,9 @@ node('slave1'){
 	  echo 'Not implemented yet'
      }
     stage ('component-test'){
-       withEnv(["APP_URL=${APP_URL}:8080"]) {
-	sh "tests/ct/run.sh"
-       }
+      // withEnv(["APP_URL=${APP_URL}:8080"]) {
+	//sh "tests/ct/run.sh"
+       //}
 	  echo 'Not implemented'
     }
     stage ('clean-up'){
