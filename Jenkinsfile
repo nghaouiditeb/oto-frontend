@@ -42,6 +42,7 @@ node('slave1'){
 	    echo 'TODO'
     }
     stage('deply-to-staging'){
+	    echo ${env.BUILD_NUMBER}
         sh "kubectl apply -f ${svcName}-dep.yml -n staging"  
     }
     stage ('integration-test'){
