@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: front
-        image: izgh/oto-front:BUILD_NUMBER
+        image: nizgh/oto-front:BUILD_NUMBER
         ports:
         - containerPort: 3000
   strategy:
