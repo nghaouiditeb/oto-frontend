@@ -18,7 +18,7 @@ node('slave1'){
 	sh "kubectl create namespace ${nsName}"
         sh "kubectl apply -f mongodep.yml --validate=false -n ${nsName}"
         sh "kubectl apply -f ${svcName}-dep.yml --validate=false -n ${nsName}"
-        get app url
+        //get app url
         APP_URL = "<pending>"
         sleep 120
         while ( APP_URL == "<pending>"){
