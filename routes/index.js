@@ -12,8 +12,8 @@ function Poduct(name, price) {
 }
 
 exports.index = function(req, res){
-  prod_url = "http://35.195.44.77:5000/product"
-  order_url = "http://104.155.60.66:8080/orders"
+  prod_url = "http://" + process.env.PRODUCT_SERVICE_HOST + ":" + process.env.PRODUCT_SERVICE_PORT + "/product"
+    order_url = "http://" + process.env.ORDER_SERVICE_HOST + ":" + process.env.ORDER_SERVICE_PORT + "/orders"
 
   console.log(prod_url)
   var products = []
