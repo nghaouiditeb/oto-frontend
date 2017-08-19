@@ -10,10 +10,7 @@ function Poduct(name, price) {
   this.name = name;
   this.price = price; // default value
 }
-RODUCT_SERVICE_HOST=35.195.44.77
-PRODUCT_SERVICE_PORT=5000
-ORDER_SERVICE_HOST=104.155.60.66
-ORDER_SERVICE_PORT=8080
+
 exports.index = function(req, res){
   prod_url = "http://35.195.44.77:5000/product"
   order_url = "http://104.155.60.66:8080/orders"
